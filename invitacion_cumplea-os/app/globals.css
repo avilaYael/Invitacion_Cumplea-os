@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #F0F6FA; /* Fondo azul cielo pastel ultra suave */
+  --foreground: #2C4356; /* Azul oscuro elegante para el texto principal */
+  
+  --brand-cream: #F0F6FA; /* Fondo principal */
+  --brand-sage: #81A896; /* Verde sabio suave */
+  --brand-yellow: #FCDA9C; /* Amarillo sol cálido para destacar */
+  --brand-yellow-dark: #B07E2A;
+  --brand-charcoal: #2C4356; /* Azul marino/carbón */
+  --brand-rose: #EAA89B; /* Rosa coral suave */
+  --brand-blue: #6A99C9; /* Azul cielo principal alegre */
+  --brand-blue-light: #B9D1EA; /* Celeste pastel claro para paneles */
+  --brand-blue-dark: #1E3040; /* Azul marino profundo para contrastes fuertes */
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-sage: var(--brand-sage);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-yellow-dark: var(--brand-yellow-dark);
+  --color-brand-charcoal: var(--brand-charcoal);
+  --color-brand-rose: var(--brand-rose);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-blue-light: var(--brand-blue-light);
+  --color-brand-blue-dark: var(--brand-blue-dark);
+  
+  --font-playful: 'Fredoka', 'Quicksand', 'Geist', sans-serif;
+  --font-sans: 'Quicksand', 'Geist', sans-serif;
+  
+  --animate-float-balloon: float-balloon 6s ease-in-out infinite;
+  --animate-float-balloon-slow: float-balloon-slow 8s ease-in-out infinite;
+  --animate-float-balloon-fast: float-balloon 4.5s ease-in-out infinite;
+  --animate-sway: sway 4s ease-in-out infinite;
+  --animate-drift-cloud: drift-cloud 25s linear infinite;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+body {
+  background-color: var(--brand-cream);
+  color: var(--brand-charcoal);
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom Keyframes and Animations */
+@keyframes float-balloon {
+  0%, 100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-18px) rotate(2deg);
+  }
+}
+
+@keyframes float-balloon-slow {
+  0%, 100% {
+    transform: translateY(0) rotate(1.5deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-1.5deg);
+  }
+}
+
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes drift-cloud {
+  0% {
+    transform: translateX(-15%);
+  }
+  50% {
+    transform: translateX(15%);
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}
+
+/* Glassmorphism utility classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(106, 153, 201, 0.08);
+}
+
+.glass-panel-heavy {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 12px 40px 0 rgba(106, 153, 201, 0.12);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
