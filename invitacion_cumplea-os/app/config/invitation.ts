@@ -22,8 +22,7 @@ export const INVITATION_CONFIG = {
 
   // Configuración de confirmación (WhatsApp)
   rsvp: {
-    // Código de país + número (ej. +52 55 1234 5678 -> 525512345678) sin espacios ni símbolos
-    whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "525515224796",
+    whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "",
     whatsappMessagePrefix: "¡Hola! Confirmo mi asistencia al cumpleaños de Oscar Eduardo:",
   },
 
