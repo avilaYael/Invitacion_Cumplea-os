@@ -195,7 +195,7 @@ export default function Home() {
             {/* Invitation Cover Image - Generated Safari Animals */}
             <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white shadow-lg mb-8 animate-float-balloon-slow">
               <Image
-                src="/cover.png"
+                src="/oscar_Eduardo.jpeg"
                 alt="Invitación de Cumpleaños Oscar Eduardo"
                 fill
                 priority
