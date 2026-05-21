@@ -10,14 +10,14 @@ export const INVITATION_CONFIG = {
   eventDateFormatted: "Sábado 22 de Agosto, 2026",
   eventTimeFormatted: "3:30 PM",
 
-  // Ubicación del evento
+  // Detalles del lugar del evento
   venue: {
-    name: "Jardín de Eventos 'Los Globos'",
-    address: "Av. Paseo de las Lomas 123, Col. Lindavista, Ciudad de México",
+    name: "Salón de Eventos Sociales Xanthe",
+    address: "Calle Tórtolas 49, Izcalli Ecatepec, 55030 Ecatepec de Morelos, Edo. de México",
     // Enlace directo para abrir en Google Maps app
-    googleMapsLink: "https://maps.google.com/?q=Av.+Paseo+de+las+Lomas+123,+Col.+Lindavista,+Ciudad+de+Mexico",
+    googleMapsLink: "https://maps.app.goo.gl/hDm8wuKwmwqEcX8b6",
     // Iframe para el mapa embebido de Google Maps
-    embedMapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661334657158!2d-99.1352497!3d19.4326077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzU3LjQiTiA5OcKwMDgnMDYuOSJX!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
+    embedMapUrl: "https://maps.google.com/maps?q=Salon%20de%20eventos%20sociales%20xanthe%20Ecatepec&t=&z=15&ie=UTF8&iwloc=&output=embed"
   },
 
   // Configuración de confirmación (WhatsApp)
